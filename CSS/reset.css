@@ -24,6 +24,7 @@ button {
 select {
   color: inherit;
   appearance: none;
+  border: none;
 }
 
 h1,
