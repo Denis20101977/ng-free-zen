@@ -4,13 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ZEN</title>
+    <link rel="stylesheet" href="CSS/reset.css" />
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/menu.css" />
+    <link rel="stylesheet" href="CSS/burger.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__wrapper">
         <button class="header__logo" type="button">
-          <img src="assets/icons/logo.svg" alt="ZEN" id="logo">                              
+          <img src="assets/icons/logo.svg" alt="ZEN" id="logo" />                              
         </button>
         <nav class="header__nav">
           <ul class="menu" id="menu">
@@ -38,13 +42,16 @@
         </nav>
         <div class="header__actions">
           <!-- lang -->
-          <select class="header__lang" id="lang">
-            <option value="en">EN</option>
-            <option value="ru">RU</option>
-          </select>
+          <label class="header__lang">
+            <img src="assets/icons/arrow.svg" alt="arrow" />
+            <select id="lang">
+              <option value="en">EN</option>
+              <option value="ru">RU</option>
+            </select>
+          </label>
           <!-- theme -->
           <button class="header__theme" type="button" id="theme">
-            <img src="assets/icons/moon.svg" alt="Moon">
+            <img src="assets/icons/theme_night_.svg" alt="Moon" />
           </button>
           <!-- burger -->
           <button class="header__burger" type="button" id="burger">
@@ -120,35 +127,35 @@
          <ul class="clients__brands">
           <!-- Brand 1 -->
           <li class="clients__brand">
-          <img src="assets/brands/1.svg" alt="Brand 1">
+          <img src="assets/brands/1.svg" alt="Brand 1" />
           </li>
           <!-- Brand 2 -->
           <li class="clients__brand">
-            <img src="assets/brands/2.svg" alt="Brand 2">
+            <img src="assets/brands/2.svg" alt="Brand 2" />
           </li>
           <!-- Brand 3 -->
           <li class="clients__brand">
-            <img src="assets/brands/3.svg" alt="Brand 3">
+            <img src="assets/brands/3.svg" alt="Brand 3" />
           </li>
           <!-- Brand 4 -->
           <li class="clients__brand">
-            <img src="assets/brands/4.svg" alt="Brand 4">
+            <img src="assets/brands/4.svg" alt="Brand 4" />
           </li>
           <!-- Brand 5 -->
           <li class="clients__brand">
-            <img src="assets/brands/5.svg" alt="Brand 5">
+            <img src="assets/brands/5.svg" alt="Brand 5" />
           </li>
           <!-- Brand 6 -->
           <li class="clients__brand">
-            <img src="assets/brands/6.svg" alt="Brand 6">
+            <img src="assets/brands/6.svg" alt="Brand 6" />
           </li>
           <!-- Brand 7 -->
           <li class="clients__brand">
-            <img src="assets/brands/7.svg" alt="Brand 7">
+            <img src="assets/brands/7.svg" alt="Brand 7" />
           </li>
           <!-- Brand 8 -->
           <li class="clients__brand">
-            <img src="assets/brands/8.svg" alt="Brand 8">
+            <img src="assets/brands/8.svg" alt="Brand 8" />
           </li>
          </ul>
         </div>
@@ -241,7 +248,7 @@
             <!-- Item 1 -->
             <li class="column__item">
               <a href="https://example.com">
-                <img src="assets/icons/in.svg" alt="Linkkedid">
+                <img src="assets/icons/in.svg" alt="Linkkedid" />
               </a>
             </li>
           </ul>
@@ -260,7 +267,7 @@
       <!-- Info -->
       <div class="footer__info">
         <a class="footer__logo" href="htpps://example.com">
-          <img src="assets/icons/logo_2.svg">
+          <img src="assets/icons/logo_2.svg" />
         </a>
         <p class="footer__copy">ZEN is a licensed financial institution under the supervision of the Central Bank of Lithuania approved by European Banking Authority for 31 countries.</p>
         <p class="footer__copy">Registration number of the company 304749651, VAT ID LT100011714916.</p>
@@ -269,7 +276,7 @@
         <p class="footer__copy">Company address: Mėsinių g. 5, LT-01133, Vilnius, Lithuania.</p>
         <p class="footer__copy">Sales Office: ul. Emilii Plater 53, 00-113 Warsaw, Poland.</p>
         <a class="footer__dev" href="htpps://example.com">
-          <img src="assets/icons/developer.svg">
+          <img src="assets/icons/developer.svg" />
         </a>
       </div>
     </footer>
@@ -278,7 +285,7 @@
       <div class="modal__body">
         <!-- Close  -->
         <button class="modal__close" id="close">
-          <img src="assets/icons/close.svg" alt="close">
+          <img src="assets/icons/close.svg" alt="close" />
         </button>
         <!-- Title -->
         <h3 class="modal__title">Order a consultation</h3>
@@ -287,17 +294,17 @@
           <!-- Name -->
           <label class="form__input">
             <span>Name</span>
-            <input type="text" id="name"> 
+            <input type="text" id="name" /> 
           </label>
           <!-- Telephone -->
           <label class="form__input">
             <span>Tel.</span>
-            <input type="tel" id="tel"> 
+            <input type="tel" id="tel" /> 
           </label>
           <!-- Email -->
           <label class="form__input">
             <span>E-mail</span>
-            <input type="email" id="email"> 
+            <input type="email" id="email" /> 
           </label>
           <!-- Connection -->
           <label class="form_select">
@@ -309,7 +316,7 @@
           </label>
           <!-- Privacy policy -->
           <label class="form__checkbox">
-            <input type="checkbox" id="policy">
+            <input type="checkbox" id="policy" />
             <a href="https://example.com/policy" target="_blank">Privacy policy</a>
           </label>
           <!-- Submit -->
