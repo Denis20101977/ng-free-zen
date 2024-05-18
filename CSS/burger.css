@@ -1,8 +1,8 @@
 .burger {
+  position: relative;
   width: 30px;
   height: 20px;
   /* border: 1px dashed orange; */
-  position: relative;
 }
 
 .burger.active::before {
@@ -26,17 +26,18 @@
   display: block;
   width: 100%;
   height: 2px;
-  background: red;
+  background: #000;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .burger span {
+  /* position: relative; */
   display: block;
   width: 100%;
   height: 2px;
-  background: orange;
+  background: #000;
 }
 
 .burger::after {
@@ -44,7 +45,7 @@
   display: block;
   width: 100%;
   height: 2px;
-  background: green;
+  background: #000;
   position: absolute;
   bottom: 0;
   left: 0;
